@@ -1,0 +1,48 @@
+<!-- Login Form -->
+<div id="login-form">
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <button type="submit" onclick="login()">Login</button>
+  </form>
+</div>
+
+<!-- Main Page -->
+<div id="main-page">
+  <!-- Point Total -->
+  <div id="point-total">
+    <h2>Point Total: <span id="total-points"></span></h2>
+  </div>
+
+  <!-- Assign Points Form -->
+  <div id="assign-points-form">
+    <form>
+      <label for="points">Points:</label>
+      <select id="points">
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+      </select>
+      <label for="note">Note:</label>
+      <textarea id="note"></textarea>
+      <button type="submit" onclick="assignPoints()">Assign Points</button>
+    </form>
+  </div>
+
+  <!-- Point History -->
+  <div id="point-history">
+    <h2>Point History</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Points</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody id="history-body">
+      </tbody>
+    </table>
+  </div>
+</div>
